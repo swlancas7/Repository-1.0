@@ -1,0 +1,67 @@
+Python 3.13.0 (tags/v3.13.0:60403a5, Oct  7 2024, 09:38:07) [MSC v.1941 64 bit (AMD64)] on win32
+Type "help", "copyright", "credits" or "license" for more information.
+>>> weather = "sunny"
+>>>
+>>> if weather == "sunny":
+...     print("Wear sunglasses!")
+... else:
+...     print("Take an umbrella!")
+
+>>> mood = input("How do you feel today?: ")
+How do you feel today?:
+>>> if mood == "happy":
+...     print("That's great to hear!")
+...     if mood == "sad":
+...         print("I hope your day gets better!")>>> mood = input("How do you feel today?: ")
+...         How do you feel today?:
+...             >>> if mood == "happy":
+...                 ...     print("That's great to hear!")
+...                 ...     if mood == "sad":
+...                     ...         print("I hope your day gets better!")
+
+>>> PI_VALUE = 3.14
+>>> user_age = 25
+>>> user_location = "New York"
+>>> max_limit = 1000
+
+>>> # Initialize total cost variable
+>>> total_cost = 0
+>>>
+>>> # Get price of first item
+>>> price_item1 = float(input("Enter price of first item: "))
+Enter price of first item: total_cost += price_item1
+Traceback (most recent call last):
+  File "<python-input-4>", line 1, in <module>
+    price_item1 = float(input("Enter price of first item: "))
+ValueError: could not convert string to float: 'total_cost += price_item1 '
+>>>
+>>> # Get price of second item
+>>> price_item2 = float(input("Enter price of second item: "))
+Enter price of second item: total_cost += price_item2
+Traceback (most recent call last):
+  File "<python-input-7>", line 1, in <module>
+    price_item2 = float(input("Enter price of second item: "))
+ValueError: could not convert string to float: 'total_cost += price_item2 '
+>>>
+>>> # Get price of third item
+>>> price_item3 = float(input("Enter price of third item: "))
+Enter price of third item: total_cost += price_item3
+Traceback (most recent call last):
+  File "<python-input-10>", line 1, in <module>
+    price_item3 = float(input("Enter price of third item: "))
+ValueError: could not convert string to float: 'total_cost += price_item3 '
+>>>
+>>> # Print the calculated total cost
+>>> print("Your total grocery cost is:", total_cost)
+
+>>> annualInterestRate = float(input(
+...     "Enter annual interest rate, e.g., 8.25: "))
+Enter annual interest rate, e.g., 8.25: 8.25
+>>> monthlyInterestRate = annualInterestRate / 1200
+>>> numberOfYears= int(input(
+...     "Enter number of years as an integer, e.g., 5:))
+...     loanAmount = float(input("Enter loan amount, e.g., 120000.95: "))
+...     monthlyPayment = loanAmount * monthlyInterestRate / (1 - 1 / (1 + monthlyInterestRate) ** (numberOfYears * 12))
+...     totalPayment = monthlyPayment * numberOfYears*12
+...     print("The monthly payment is", int (monthlyPayment * 100) / 100)
+...     print("The total payment is", int(totalPayment * 100)/100)
